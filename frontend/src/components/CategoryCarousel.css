@@ -1,0 +1,87 @@
+/* Centering the Carousel */
+.carousel-container {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9; /* Light background for contrast */
+}
+
+.carousel-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* Dark text for better readability */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Swiper Container */
+.carousel {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* Individual Category Item */
+.carousel-item {
+    background: #fff; /* White background */
+    color: #333; /* Dark text */
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #e0e0e0; /* Light border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Active Slide */
+.swiper-slide-active {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    background: #26cecd; /* Highlight color for active slide */
+    color: #fff; /* White text for active slide */
+}
+
+/* Hover Effect */
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background: #1a2c81; /* Darker color on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .carousel {
+        width: 90%;
+    }
+
+    .carousel-item {
+        font-size: 1.2rem;
+        padding: 15px 30px;
+    }
+
+    .carousel-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel {
+        width: 95%;
+    }
+
+    .carousel-item {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .carousel-title {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,142 @@
+/* Latest Job Card Container */
+.latest-job-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e0e0; /* Light border for a clean look */
+}
+
+.latest-job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+/* Job Card Content */
+.job-card-content {
+    margin-bottom: 15px;
+}
+
+/* Job Title */
+.job-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+/* Company Details */
+.company-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover; /* Ensures the logo fits well */
+    border: 1px solid #e0e0e0; /* Light border for the logo */
+}
+
+.company-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.job-location {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Job Positions */
+.job-positions {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for emphasis */
+}
+
+/* Job Meta Information */
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.job-type {
+    background: #f0f0f0; /* Light background for job type */
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.job-salary {
+    font-weight: bold;
+    color: #28a745; /* Green color for salary */
+}
+
+/* Job Description */
+.job-description {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.5; /* Improved readability */
+}
+
+/* Apply Button */
+.apply-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Modern font */
+}
+
+.apply-button:hover {
+    background: #0056b3;
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .latest-job-card {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .job-title {
+        font-size: 1.2rem;
+    }
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .job-location {
+        font-size: 0.8rem;
+    }
+
+    .job-meta {
+        flex-direction: column; /* Stack job type and salary vertically */
+        gap: 5px;
+    }
+
+    .apply-button {
+        font-size: 0.9rem;
+    }
+}

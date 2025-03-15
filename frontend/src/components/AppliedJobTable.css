@@ -1,0 +1,73 @@
+/* Container for the table */
+.applied-job-table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Table styling */
+.applied-job-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Table header styling */
+.applied-job-table-header {
+  background-color: #4a90e2;
+  color: #ffffff;
+}
+
+.applied-job-table-header th {
+  padding: 12px 15px;
+  font-weight: 600;
+}
+
+/* Table row styling */
+.applied-job-table-row {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.applied-job-table-row:hover {
+  background-color: #f5f5f5;
+}
+
+.applied-job-table-row td {
+  padding: 12px 15px;
+  color: #333333;
+}
+
+/* Empty row styling */
+.applied-job-table-empty-row td {
+  padding: 20px;
+  text-align: center;
+  color: #777777;
+  font-style: italic;
+}
+
+/* Status badge styling */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-rejected {
+  background-color: #f8d7da;
+  color: #721c24;
+}

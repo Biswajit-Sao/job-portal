@@ -1,0 +1,102 @@
+/* JobDescription.css */
+
+.jd-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jd-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.jd-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.jd-details {
+  margin-bottom: 2rem;
+}
+
+.jd-details table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.jd-details td {
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  border: 1px solid #ddd;
+}
+
+.jd-details td:first-child {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.jd-apply-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.jd-apply-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.jd-apply-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.jd-content {
+  margin-top: 2rem;
+}
+
+.jd-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.jd-content th,
+.jd-content td {
+  padding: 1rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.jd-content th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+}
+
+.jd-content td {
+  color: #555;
+}
+
+.jd-content tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.jd-content tr:hover {
+  background-color: #f1f1f1;
+}

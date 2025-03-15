@@ -1,0 +1,94 @@
+.applicants-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .applicants-heading {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .applicants-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .applicants-table th, .applicants-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .applicants-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .applicants-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .applicants-action-btns {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .approve-btn, .reject-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .approve-btn {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .reject-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .approve-btn:hover {
+    background-color: #218838;
+  }
+  
+  .reject-btn:hover {
+    background-color: #c82333;
+  }
+  
+  .resume-icon {
+    font-size: 20px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+
+  .status-text {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .status-text.approved {
+    color: green;
+    background-color: #e8f5e9; 
+  }
+  
+  .status-text.rejected {
+    color: red;
+    background-color: #ffebee; 
+  }
+  

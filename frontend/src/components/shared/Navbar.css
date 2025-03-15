@@ -1,0 +1,276 @@
+.unique-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(26, 26, 26, 0.6); /* Soft transparency */
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px); /* Soft glass effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff7eb3;
+  letter-spacing: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #ff7eb3;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-avatar-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.avatar-img:hover {
+  transform: scale(1.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 12px;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-info h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.profile-btn,
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.profile-btn {
+  background: #007bff;
+  color: white;
+}
+
+.profile-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #a71d2a;
+  transform: translateY(-2px);
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn, .signup-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn {
+  background: #007bff;
+  color: white;
+}
+
+.login-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.signup-btn {
+  background: #28a745;
+  color: white;
+}
+
+.signup-btn:hover {
+  background: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .unique-navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-links {
+    gap: 18px;
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+  }
+
+  .auth-buttons {
+    gap: 8px;
+  }
+
+  .login-btn, .signup-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .dropdown-menu {
+    width: 190px;
+    padding: 10px;
+  }
+
+  .dropdown-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dropdown-info h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .unique-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  .auth-buttons {
+    gap: 6px;
+  }
+
+  .login-btn, .signup-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .dropdown-menu {
+    width: 160px;
+    padding: 8px;
+  }
+
+  .dropdown-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .dropdown-info h4 {
+    font-size: 14px;
+  }
+}

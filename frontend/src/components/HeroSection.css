@@ -1,0 +1,162 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 50vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url("../assest/hero2.jpg"); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Overlay for better readability */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.2s ease-in-out;
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+  
+  /* Text Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-content h1 {
+    font-size: 5.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeSlide 1.5s ease-in-out;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #eee;
+    animation: fadeSlide 2s ease-in-out;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ddd;
+    animation: fadeSlide 2.5s ease-in-out;
+  }
+  
+  /* Smooth Text Slide Animation */
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .search-bar input {
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    width: 320px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  }
+  
+  .search-bar input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Button Animation */
+  .search-bar button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff7eb3, #ff4f88);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search-bar button:hover {
+    background: linear-gradient(90deg, #ff4f88, #ff7eb3);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 78, 136, 0.6);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      padding: 50px 20px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero-content h2 {
+      font-size: 1.4rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+    }
+  
+    .search-bar input {
+      width: 100%;
+    }
+  
+    .search-bar button {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,104 @@
+/* General Styling */
+.filter-card-unicorn {
+  width: 300px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+
+.filter-card-unicorn:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styling */
+.filter-title-unicorn {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Divider */
+.divider-unicorn {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #4b6cb7, #182848);
+  margin: 10px 0;
+}
+
+/* Filter Section */
+.filter-sections-unicorn {
+  margin-top: 10px;
+}
+
+.filter-section-unicorn {
+  margin-bottom: 15px;
+}
+
+/* Filter Type */
+.filter-type-unicorn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Filter Options */
+.filter-options-unicorn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-option-unicorn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.filter-option-unicorn:hover {
+  background: #f5f5f5;
+}
+
+/* Radio Button */
+.filter-option-unicorn input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #4b6cb7;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.filter-option-unicorn input[type="radio"]:checked {
+  background-color: #4b6cb7;
+  border-color: #4b6cb7;
+}
+
+.filter-option-unicorn input[type="radio"]:checked::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+/* Label */
+.filter-option-unicorn label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
