@@ -21,7 +21,7 @@ app.use(cookieParser())
 
 
 const corsOptions = {
-    origin: "http://localhost:3000",
+    origin: "https://job-portal-nlty.onrender.com",
     credentials: true,  
 };
 
